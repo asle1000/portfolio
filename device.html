@@ -1,0 +1,250 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"><title>박경현 Android Portfolio</title>
+<style>
+@page { size: A4; margin: 40pt 51pt 36pt;
+  @top-left { content: "박경현 · Android Portfolio"; font: 8.5pt Pretendard; color: #6B6B6B; vertical-align: bottom; padding-bottom: 8pt; }
+  @top-right { content: counter(page) " / " counter(pages); font: 8.5pt Pretendard; color: #6B6B6B; vertical-align: bottom; padding-bottom: 8pt; } }
+@page :first { @top-left { content: none; } @top-right { content: none; } }
+:root { --bg: #FFFFFF; --line: #C9C9C9; --blue: #1D4ED8; --blue-soft: #EEF3FD; --ink-3: #6B6B6B; }
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { -webkit-print-color-adjust: exact; }
+body { width: 493pt; font-family: Pretendard, sans-serif; font-size: 9.5pt; line-height: 1.62; color: #3D3D3D; word-break: keep-all; line-break: strict; }
+a { color: #3D3D3D; text-decoration: underline; text-decoration-thickness: .5pt; text-underline-offset: 1.5pt; }
+b { font-weight: 600; color: #1A1A1A; }
+.keep { break-inside: avoid; }
+.name { font-size: 20pt; font-weight: 700; color: #1A1A1A; line-height: 1.5; }
+.name .role { font-size: 10pt; font-weight: 500; color: #3D3D3D; white-space: pre; }
+.contact { font-size: 9pt; margin: 2pt 0 12pt; } .sep { color: #6B6B6B; white-space: pre; }
+.thesis { font-size: 12pt; font-weight: 600; color: #1A1A1A; line-height: 1.5; margin-bottom: 4pt; }
+.subt { font-size: 9.5pt; margin-bottom: 12pt; }
+.stats { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12pt; margin: 4pt 0 4pt; }
+.stats div { border-top: 1.5pt solid #1A1A1A; padding-top: 5pt; }
+.stats b { display: block; font-size: 13pt; font-weight: 700; line-height: 1.35; }
+.stats .st { display: block; font-weight: 600; color: #1A1A1A; font-size: 8.5pt; line-height: 1.45; }
+.stats .sd { display: block; color: #6B6B6B; font-size: 8pt; line-height: 1.45; }
+h1 { font-size: 13pt; font-weight: 700; color: #1A1A1A; line-height: 1.5; margin: 18pt 0 5pt; padding-top: 8pt; border-top: .5pt solid #C9C9C9; }
+table { width: 100%; border-collapse: collapse; }
+tr { break-inside: avoid; }
+.index, .rows { font-size: 8.5pt; line-height: 1.5; }
+.index th, .rows th { text-align: left; font-weight: 600; color: #6B6B6B; border-bottom: .5pt solid #C9C9C9; padding: 0 6pt 3pt 0; }
+.index td, .rows td { padding: 4pt 6pt 4pt 0; border-bottom: .5pt solid #EEEEEE; vertical-align: top; }
+.index td:nth-child(2) { font-weight: 600; color: #1A1A1A; width: 36%; }
+.index td:nth-child(3) { width: 31%; }
+.rows td:first-child { font-weight: 600; color: #1A1A1A; width: 22%; }
+.rows td:first-child span, .proj th span { display: block; font-weight: 400; color: #6B6B6B; font-size: 8pt; }
+.rows td:last-child { width: 32%; }
+.no { color: #6B6B6B; font-variant-numeric: tabular-nums; width: 18pt; }
+.proj { font-size: 9pt; line-height: 1.55; }
+.proj th { width: 118pt; text-align: left; font-weight: 600; color: #1A1A1A; vertical-align: top; padding: 3pt 8pt 3pt 0; }
+.proj td { padding: 3pt 0; vertical-align: top; }
+.etc th { width: 72pt; }
+.case { break-inside: avoid; padding-top: 10pt; margin-top: 10pt; border-top: .5pt solid #C9C9C9; }
+.cases .case:first-child { break-before: page; border-top: 0; margin-top: 0; padding-top: 0; }
+.cmeta { font-size: 8.5pt; color: #6B6B6B; }
+.cmeta .no { display: inline-block; width: auto; margin-right: 6pt; font-weight: 600; color: #1A1A1A; }
+h2 { font-size: 12.5pt; font-weight: 700; color: #1A1A1A; line-height: 1.45; margin: 1pt 0 6pt; }
+dl { display: grid; grid-template-columns: 30pt 1fr; row-gap: 4pt; }
+dt { font-weight: 600; color: #1A1A1A; }
+.nums { display: grid; gap: 10pt; margin: 8pt 0 2pt; }
+.nums.n2 { grid-template-columns: 1fr 1fr; } .nums.n3 { grid-template-columns: repeat(3, 1fr); }
+.nums div { border-left: 1.5pt solid #1A1A1A; padding-left: 7pt; }
+.nums b { display: block; font-size: 11pt; line-height: 1.35; }
+.nums span { display: block; font-size: 8pt; color: #6B6B6B; line-height: 1.45; }
+figure { margin: 8pt 0 2pt; }
+figure svg { display: block; width: 360pt; margin: 0 auto; height: auto; color: #1A1A1A; font-family: Pretendard, sans-serif; }
+.role { font-size: 8.8pt; margin-top: 4pt; }
+.role b { font-weight: 600; margin-right: 4pt; }
+.role a { margin-left: 4pt; }
+@media screen { html { background: #F2F2F2; } body { margin: 32px auto; padding: 40px 51px; background: #FFFFFF; box-sizing: content-box; } }
+@media screen and (max-width: 720px) { body { width: auto; margin: 0; padding: 20px 16px; } .stats { grid-template-columns: repeat(2, 1fr); } .nums.n3 { grid-template-columns: 1fr; } figure svg { width: 100%; } .proj th { width: 96pt; } .contact .sep { white-space: normal; } .contact { line-height: 1.9; } }
+</style></head><body><header class="top"><p class="name">박경현<span class="role">  Android Developer · Android Portfolio</span></p>
+<p class="contact">asle1000@gmail.com<span class="sep">   |   </span><a href="https://github.com/asle1000">github.com/asle1000</a><span class="sep">   |   </span><a href="https://velog.io/@day_park_94">velog.io/@day_park_94</a></p>
+<p class="thesis">앱 밖에서 생기는 문제까지 원인을 찾아 해결합니다.</p><p class="subt">결제 SDK와 스마트홈 앱에서 BLE·NFC·HCE로 실물 기기와 통신하는 기능을 만들어 왔습니다. OS 업데이트, 제조사 변경, 기기 연동처럼 앱 코드 밖에서 생긴 문제는 로그와 AOSP 코드로 좁히고 앱에서 먼저 막습니다. 지금은 MAU 20만 이상 스마트홈 앱의 Android를 혼자 맡고 있습니다.</p></header>
+<div class="stats"><div><b>다음 날</b><span class="st">Galaxy S26 장애 상용 핫픽스</span><span class="sd">원인은 AOSP 커밋으로 확인</span></div><div><b>18.9% → 1.3%</b><span class="st">BLE 출입 배터리 소모</span><span class="sd">오류율 0.3% 이하 유지</span></div><div><b>99.9%</b><span class="st">HCE 교통카드 SDK 인식률</span><span class="sd">금융·교통·공공 7곳 이상 상용 배포</span></div><div><b>99.95%</b><span class="st">Crash-free 사용자</span><span class="sd">MAU 20만 이상 앱, Crashlytics</span></div></div>
+<div class="keep"><h1>대표 사례</h1><table class="index"><thead><tr><th></th><th>과제</th><th>핵심 판단</th><th>결과</th></tr></thead><tbody>
+<tr><td class="no">01</td><td>Galaxy S26 엘리베이터 호출 실패, 다음 날 핫픽스</td><td>OS 수정을 기다리지 않고 앱에서 식별 순서를 바꿈</td><td>인입 당일 수정, 다음 날 상용 배포</td></tr>
+<tr><td class="no">02</td><td>Android 16 WebView 콜드 스타트 크래시, 착수 5일 만에 방어</td><td>제조사 수정을 기다리지 않고 API 36 한정 방어 코드</td><td>크래시율 0.1% 미만, 착수 5일 만에 적용</td></tr>
+<tr><td class="no">03</td><td>BLE 출입 배터리 소모 18.9% → 1.3%</td><td>상시 스캔 대신 단지 반경 Geofence 조건부 스캔</td><td>배터리 18.9% → 1.3%, 오류율 0.3% 이하 유지</td></tr>
+<tr><td class="no">04</td><td>HCE 미지원 단말과 리더 없는 단지까지 앱카드 확장</td><td>단말과 단지에 따라 HCE와 NFC 태그 읽기로 이원화</td><td>전 단말·전 단지 제공, 요청부터 알파까지 약 3주</td></tr>
+<tr><td class="no">05</td><td>HCE 교통카드 SDK 초도 버전 안정화</td><td>지역별 실단말 RF 튜닝, Coroutine 전환</td><td>인식률 99.9%, 결제 200ms 이하, 7곳 이상 상용 배포</td></tr>
+</tbody></table></div>
+<div class="keep"><h1>프로젝트</h1><table class="proj"><tr><th>바이비 2.0<span>HT Beyond · 2023.08 ~ 재직 중</span></th><td>아파트 입주민 스마트홈 앱. 건설사 앱 12종을 코드베이스 하나로 운영, Android MAU 20만 이상(GA4). 2024.12부터 Android 단독, 협업 iOS 1·Web 4·Backend 8</td></tr><tr><th>바이비 관리자앱<span>HT Beyond · 2026.07 ~ 재직 중</span></th><td>현장 주차단속 앱. Android 단독 개발, 번호판 인식 코어는 팀원이 개발한 모듈을 연동</td></tr><tr><th>KloneSales<span>Klleon · 2022.08 ~ 2023.08</span></th><td>AI 디지털 휴먼 영상 앱. 2인 모바일 팀에서 Flutter로 Android·iOS 개발</td></tr><tr><th>HCE 교통카드 SDK<span>TelCuon · 2020.05 ~ 2022.08</span></th><td>SE 없이 HCE로 동작하는 교통카드 SDK. Android SDK 개발과 iOS 포팅</td></tr></table></div>
+<div class="keep"><h1>그 밖에</h1><table class="proj etc">
+<tr><th>오늘은 연차</th><td>연차 관리 앱. Compose, Clean Architecture, 멀티모듈, MVI, Koin. Google Play 배포 <a href="https://play.google.com/store/apps/details?id=com.dayoff.manager">play.google.com/store/apps/details?id=com.dayoff.manager</a></td></tr><tr><th>NotiToss</th><td>서버 없이 Wi-Fi P2P로 기기 간 알림을 실시간 미러링하는 앱 <a href="https://github.com/asle1000/NotiToss">github.com/asle1000/NotiToss</a></td></tr>
+<tr><th>학력</th><td>용인대학교 컴퓨터과학과 (2014.03 ~ 2020.07)</td></tr><tr><th>발표와 글</th><td>Jetpack Compose·Flutter 사내 테크톡, velog 기술 블로그(Android 16 WebView 크래시 분석, AI 리뷰 사례)</td></tr></table></div>
+<section class="cases"><article class="case" id="s26">
+<p class="cmeta"><span class="no">01</span>BLE · OEM · 2026.03</p>
+<h2>Galaxy S26 엘리베이터 호출 실패, 다음 날 핫픽스</h2>
+<dl><dt>상황</dt><dd>Galaxy S26으로 바꾼 사용자에게서 문은 열리는데 엘리베이터 호출만 실패한다는 문의가 들어왔습니다. 같은 단지의 iOS와 기존 Android 단말은 정상이었습니다.</dd><dt>판단</dt><dd>문열림 쓰기가 성공하니 RF나 서버보다 식별자 문제로 보고 로그를 봤습니다. 앱은 출입 기기의 BLE 이름을 식별자로 쓰는데, GATT 연결을 한두 번 한 뒤부터 이름이 칩셋 기본 이름으로 바뀌어 있었습니다. OS 수정을 기다리는 대신 스캔 시점의 광고명을 우선 쓰고 기본 이름은 매칭에서 빼는 핫픽스를 먼저 냈고, 원인은 배포 뒤 AOSP 커밋과 제조사 확인으로 확정했습니다.</dd></dl>
+<div class="nums n2"><div><b>당일 수정</b><span>문의 접수일에 로그로 원인을 찾아 수정</span></div><div><b>다음 날 배포</b><span>상용 핫픽스, 원인 확정은 배포 뒤</span></div></div>
+<figure><svg viewBox="0 0 660 222" role="img" aria-label="이전에는 GATT 연결 뒤 OS가 돌려주는 이름이 칩셋 기본 이름으로 바뀌어 매칭에 실패했고, 이후에는 스캔 시점 광고명, GATT 이름 순으로 쓰고 칩셋 기본 이름은 매칭에서 뺀다."><defs>
+  <marker id="s26-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" style="fill:currentColor"/></marker>
+  <marker id="s26-b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" style="fill:var(--blue)"/></marker>
+</defs>
+  <text x="15" y="50" font-size="12" font-weight="700" style="fill:var(--ink-3)">이전</text>
+  
+  <rect x="60" y="20" width="150" height="52" rx="10" style="fill:var(--bg);stroke:var(--line);stroke-width:1.5"/>
+  <text x="135" y="43" text-anchor="middle" font-size="13" font-weight="700" style="fill:currentColor">BLE 스캔</text>
+  <text x="135" y="61" text-anchor="middle" font-size="11.5" style="fill:var(--ink-3)">광고명으로 식별</text>
+  
+  <rect x="235" y="20" width="190" height="52" rx="10" style="fill:var(--bg);stroke:var(--line);stroke-width:1.5"/>
+  <text x="330" y="43" text-anchor="middle" font-size="13" font-weight="700" style="fill:currentColor">GATT 연결 1~2회 뒤</text>
+  <text x="330" y="61" text-anchor="middle" font-size="11.5" style="fill:var(--ink-3)">getName() = 칩셋 기본 이름</text>
+  
+  <rect x="450" y="20" width="195" height="52" rx="10" style="fill:var(--bg);stroke:var(--line);stroke-width:1.5"/>
+  <text x="547.5" y="43" text-anchor="middle" font-size="13" font-weight="700" style="fill:currentColor">엘리베이터 호출 실패</text>
+  <text x="547.5" y="61" text-anchor="middle" font-size="11.5" style="fill:var(--ink-3)">문열림은 성공</text>
+  <line x1="210" y1="46" x2="232" y2="46" style="stroke:currentColor;stroke-width:1.5;fill:none" marker-end="url(#s26-a)"/>
+  <line x1="425" y1="46" x2="447" y2="46" style="stroke:currentColor;stroke-width:1.5;fill:none" marker-end="url(#s26-a)"/>
+  <line x1="15" y1="98" x2="645" y2="98" style="stroke:var(--line);stroke-width:1;stroke-dasharray:4 4"/>
+  <text x="15" y="150" font-size="12" font-weight="700" style="fill:var(--ink-3)">이후</text>
+  
+  <rect x="60" y="120" width="150" height="56" rx="10" style="fill:var(--blue-soft);stroke:var(--blue);stroke-width:1.5"/>
+  <text x="135" y="145" text-anchor="middle" font-size="13" font-weight="700" style="fill:currentColor">① 광고명</text>
+  <text x="135" y="163" text-anchor="middle" font-size="11.5" style="fill:var(--ink-3)">스캔 시점, 주소별 캐시</text>
+  
+  <rect x="235" y="120" width="190" height="56" rx="10" style="fill:var(--bg);stroke:var(--line);stroke-width:1.5"/>
+  <text x="330" y="145" text-anchor="middle" font-size="13" font-weight="700" style="fill:currentColor">② GATT 이름</text>
+  <text x="330" y="163" text-anchor="middle" font-size="11.5" style="fill:var(--ink-3)">광고명이 없을 때</text>
+  
+  <rect x="450" y="120" width="195" height="56" rx="10" style="fill:var(--bg);stroke:var(--line);stroke-width:1.5"/>
+  <text x="547.5" y="145" text-anchor="middle" font-size="13" font-weight="700" style="fill:currentColor">③ 칩셋 기본 이름</text>
+  <text x="547.5" y="163" text-anchor="middle" font-size="11.5" style="fill:var(--ink-3)">매칭에서 제외</text>
+  <line x1="210" y1="148" x2="232" y2="148" style="stroke:var(--blue);stroke-width:1.75;fill:none" marker-end="url(#s26-b)"/>
+  <line x1="425" y1="148" x2="447" y2="148" style="stroke:currentColor;stroke-width:1.5;fill:none" marker-end="url(#s26-a)"/>
+  <text x="60" y="208" font-size="12.5" style="fill:currentColor">조회 순서를 바꾼 핫픽스를 다음 날 배포, 원인은 배포 뒤 AOSP 커밋으로 확인</text>
+</svg></figure>
+<p class="role"><b>맡은 범위</b> 원인 추적부터 핫픽스 구현과 배포, 제조사 문의까지 맡았습니다.</p>
+</article>
+<article class="case" id="webview">
+<p class="cmeta"><span class="no">02</span>OS · Crash · 2025.09 ~ 2026.03</p>
+<h2>Android 16 WebView 콜드 스타트 크래시, 착수 5일 만에 방어</h2>
+<dl><dt>상황</dt><dd>Android 16으로 올린 단말에서 콜드 스타트 중 WebView 초기화 단계에 앱이 바로 종료됐습니다. 앱 코드는 바뀐 게 없었는데 Play Console 크래시 지표가 평소 대비 약 150,000% 급등했습니다.</dd><dt>판단</dt><dd>크래시 로그마다 ResourcesImpl이 반복되고 같은 빌드가 OS 버전에 따라 다르게 동작해, 앱 로직보다 OS의 리소스 매핑을 먼저 의심했습니다. GMS 업데이트로 바뀐 리소스 경로를 WebView가 곧바로 반영하지 못하는 경합이 Android 16의 강화된 정책에서 종료로 이어진 것이었습니다. OS 수정 시점을 알 수 없어 API 36 단말에서만 GMS 패키지 컨텍스트를 미리 불러 경로를 준비하는 방어 코드를 넣고, Google Issue Tracker와 제조사 리포트를 병행했습니다.</dd></dl>
+<div class="nums n2"><div><b>0.1% 미만</b><span>방어 코드 배포 후 크래시율(Play Console)</span></div><div><b>5일</b><span>방어 코드 착수부터 적용까지</span></div></div>
+<figure><svg viewBox="0 0 660 222" role="img" aria-label="이전에는 콜드 스타트 중 WebView 초기화가 GMS 업데이트로 바뀐 리소스 경로와 경합해 Android 16에서 종료됐고, 이후에는 API 36 단말에서만 Application.onCreate에서 GMS 패키지 컨텍스트를 먼저 불러 경로를 준비한다."><defs>
+  <marker id="wv-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" style="fill:currentColor"/></marker>
+  <marker id="wv-b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" style="fill:var(--blue)"/></marker>
+</defs>
+  <text x="15" y="50" font-size="12" font-weight="700" style="fill:var(--ink-3)">이전</text>
+  
+  <rect x="60" y="20" width="130" height="52" rx="10" style="fill:var(--bg);stroke:var(--line);stroke-width:1.5"/>
+  <text x="125" y="51" text-anchor="middle" font-size="13" font-weight="700" style="fill:currentColor">콜드 스타트</text>
+  
+  
+  <rect x="215" y="20" width="180" height="52" rx="10" style="fill:var(--bg);stroke:var(--line);stroke-width:1.5"/>
+  <text x="305" y="43" text-anchor="middle" font-size="13" font-weight="700" style="fill:currentColor">WebView 초기화</text>
+  <text x="305" y="61" text-anchor="middle" font-size="11.5" style="fill:var(--ink-3)">리소스 경로 참조</text>
+  
+  <rect x="420" y="20" width="225" height="52" rx="10" style="fill:var(--bg);stroke:var(--line);stroke-width:1.5"/>
+  <text x="532.5" y="43" text-anchor="middle" font-size="13" font-weight="700" style="fill:currentColor">Android 16: 즉시 종료</text>
+  <text x="532.5" y="61" text-anchor="middle" font-size="11.5" style="fill:var(--ink-3)">GMS 업데이트로 바뀐 경로와 경합</text>
+  <line x1="190" y1="46" x2="212" y2="46" style="stroke:currentColor;stroke-width:1.5;fill:none" marker-end="url(#wv-a)"/>
+  <line x1="395" y1="46" x2="417" y2="46" style="stroke:currentColor;stroke-width:1.5;fill:none" marker-end="url(#wv-a)"/>
+  <line x1="15" y1="98" x2="645" y2="98" style="stroke:var(--line);stroke-width:1;stroke-dasharray:4 4"/>
+  <text x="15" y="150" font-size="12" font-weight="700" style="fill:var(--ink-3)">이후</text>
+  
+  <rect x="60" y="120" width="170" height="56" rx="10" style="fill:var(--bg);stroke:var(--line);stroke-width:1.5"/>
+  <text x="145" y="145" text-anchor="middle" font-size="13" font-weight="700" style="fill:currentColor">Application.onCreate</text>
+  <text x="145" y="163" text-anchor="middle" font-size="11.5" style="fill:var(--ink-3)">API 36 단말만</text>
+  
+  <rect x="255" y="120" width="190" height="56" rx="10" style="fill:var(--blue-soft);stroke:var(--blue);stroke-width:1.5"/>
+  <text x="350" y="145" text-anchor="middle" font-size="13" font-weight="700" style="fill:currentColor">GMS 패키지 컨텍스트</text>
+  <text x="350" y="163" text-anchor="middle" font-size="11.5" style="fill:var(--ink-3)">미리 불러 경로 준비</text>
+  
+  <rect x="470" y="120" width="175" height="56" rx="10" style="fill:var(--bg);stroke:var(--line);stroke-width:1.5"/>
+  <text x="557.5" y="145" text-anchor="middle" font-size="13" font-weight="700" style="fill:currentColor">WebView 초기화</text>
+  <text x="557.5" y="163" text-anchor="middle" font-size="11.5" style="fill:var(--ink-3)">정상 동작</text>
+  <line x1="230" y1="148" x2="252" y2="148" style="stroke:var(--blue);stroke-width:1.75;fill:none" marker-end="url(#wv-b)"/>
+  <line x1="445" y1="148" x2="467" y2="148" style="stroke:currentColor;stroke-width:1.5;fill:none" marker-end="url(#wv-a)"/>
+  <text x="60" y="208" font-size="12.5" style="fill:currentColor">Google Issue Tracker·제조사 리포트 병행, One UI 8.5부터 OS에서도 해소</text>
+</svg></figure>
+<p class="role"><b>맡은 범위</b> 증상 분석과 원인 가설부터 방어 코드 구현·배포, 리포트까지 맡았습니다. <a href="https://velog.io/@day_park_94/OS-트러블-슈팅-Android-1516-WebView-Cold-Start-크래시-분석-및-대응">블로그: Android 15~16 WebView Cold Start 크래시 분석</a></p>
+</article>
+<article class="case" id="ble">
+<p class="cmeta"><span class="no">03</span>BLE · Geofence · 2024.05 ~ 07</p>
+<h2>BLE 출입 배터리 소모 18.9% → 1.3%</h2>
+<dl><dt>상황</dt><dd>바이비패스는 스마트폰만 들고 지나가면 공동현관과 엘리베이터가 반응하는 출입 기능으로 하루 17~20만 건을 처리합니다. 초기 구현은 WakeLock으로 BLE 스캔을 계속 유지해 Doze 절전 정책과 충돌했고, 배터리 소모가 18.9%였습니다(Battery Historian, 실기기 7대).</dd><dt>판단</dt><dd>스캔이 필요한 곳은 집 근처뿐이라고 보고, 거주 단지 반경을 Geofence로 등록해 반경 안에서만 스캔과 포그라운드 서비스를 실행했습니다. 스캔 주기 조정도 함께 적용했습니다. 일부 단지에 먼저 적용한 뒤 전 단지로 넓혔고, 현장 문제를 재현 없이 보려고 로그 업로드와 주변 모듈 정보 첨부를 하는 원격 진단도 넣었습니다.</dd></dl>
+<div class="nums n3"><div><b>18.9% → 1.3%</b><span>배터리 소모(지오펜스와 스캔 주기 조정 합산)</span></div><div><b>0.3% 이하</b><span>BLE 오류율, 전환 뒤에도 유지</span></div><div><b>2주 → 1~2일</b><span>현장 이슈 대응(접수부터 분석·안내까지)</span></div></div>
+<figure><svg viewBox="0 0 660 236" role="img" aria-label="이전에는 위치와 관계없이 BLE 스캔을 유지했고, 이후에는 Geofence 진입과 이탈에 따라 단지 반경 안에서만 스캔과 포그라운드 서비스를 실행한다."><defs>
+  <marker id="ble-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" style="fill:currentColor"/></marker>
+  <marker id="ble-b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" style="fill:var(--blue)"/></marker>
+</defs>
+  <text x="20" y="54" font-size="12" font-weight="700" style="fill:var(--ink-3)">이전</text>
+  
+  <rect x="70" y="20" width="200" height="60" rx="10" style="fill:var(--bg);stroke:var(--line);stroke-width:1.5"/>
+  <text x="170" y="47" text-anchor="middle" font-size="13" font-weight="700" style="fill:currentColor">어디서나 BLE 스캔</text>
+  <text x="170" y="65" text-anchor="middle" font-size="11.5" style="fill:var(--ink-3)">WakeLock 상시 유지</text>
+  <text x="300" y="46" font-size="12.5" style="fill:currentColor">Doze 절전 정책과 충돌</text>
+  <text x="300" y="66" font-size="12.5" style="fill:currentColor">배터리 소모 18.9%</text>
+  <line x1="20" y1="104" x2="640" y2="104" style="stroke:var(--line);stroke-width:1;stroke-dasharray:4 4"/>
+  <text x="20" y="162" font-size="12" font-weight="700" style="fill:var(--ink-3)">이후</text>
+  
+  <rect x="70" y="128" width="190" height="60" rx="10" style="fill:var(--bg);stroke:var(--line);stroke-width:1.5"/>
+  <text x="165" y="155" text-anchor="middle" font-size="13" font-weight="700" style="fill:currentColor">단지 반경 밖</text>
+  <text x="165" y="173" text-anchor="middle" font-size="11.5" style="fill:var(--ink-3)">스캔과 서비스 없음</text>
+  
+  <rect x="430" y="128" width="210" height="60" rx="10" style="fill:var(--blue-soft);stroke:var(--blue);stroke-width:1.5"/>
+  <text x="535" y="155" text-anchor="middle" font-size="13" font-weight="700" style="fill:currentColor">단지 반경 안</text>
+  <text x="535" y="173" text-anchor="middle" font-size="11.5" style="fill:var(--ink-3)">BLE 스캔 + 포그라운드 서비스</text>
+  <line x1="262" y1="146" x2="427" y2="146" style="stroke:var(--blue);stroke-width:1.75;fill:none" marker-end="url(#ble-b)"/>
+  <text x="345" y="138" text-anchor="middle" font-size="12" style="fill:var(--blue)">Geofence 진입</text>
+  <line x1="428" y1="172" x2="264" y2="172" style="stroke:currentColor;stroke-width:1.5;fill:none" marker-end="url(#ble-a)"/>
+  <text x="345" y="190" text-anchor="middle" font-size="12" style="fill:currentColor">이탈 · 서비스 정리</text>
+  <text x="70" y="224" font-size="12.5" style="fill:currentColor">반경 안에서만 스캔 + 스캔 주기 조정 → 배터리 소모 1.3%</text>
+</svg></figure>
+<p class="role"><b>맡은 범위</b> 지오펜스 조건부 스캔 설계와 구현, 단계 적용, 진단 기능을 맡았습니다. 기준 좌표와 반경은 서버의 단지 데이터를 씁니다.</p>
+</article>
+<article class="case" id="appcard">
+<p class="cmeta"><span class="no">04</span>NFC · HCE · 2024 ~ 2025</p>
+<h2>HCE 미지원 단말과 리더 없는 단지까지 앱카드 확장</h2>
+<dl><dt>상황</dt><dd>하루 8천 건 쓰이는 HCE 앱카드에서 카드 발급사마다 다른 AID가 충돌해 인식이 불안정했고, 홍미·샤오미 같은 일부 단말은 HCE를 지원하지 않았습니다. HCE 리더 모듈이 없는 단지도 NFC 태그만 붙여 출입하게 해 달라는 영업 요청도 들어왔습니다.</dd><dt>판단</dt><dd>AID 충돌 조건을 나눠 우선순위 규칙을 바꾸고 처리 경로를 둘로 나눴습니다. HCE를 쓸 수 있는 단말과 단지는 HCE로, 그렇지 않으면 NFC 태그 읽기로 처리하며 iOS의 태그 읽기 방식과도 맞췄습니다. 읽기 모드는 별도 화면 대신 한 화면에서 전환하게 하고, 단지가 지원하는 모드에 따라 노출을 제어했습니다.</dd></dl>
+<div class="nums n2"><div><b>약 3주</b><span>태그 읽기 모드 요청부터 알파 배포까지</span></div><div><b>하루 8천 건</b><span>앱카드 이용(GA4)</span></div></div>
+<figure><svg viewBox="0 0 660 222" role="img" aria-label="앱카드를 실행하면 단지 지원 모드를 확인하고, HCE 단말이면서 리더 모듈이 있는 단지는 AID 우선순위 규칙이 적용된 HCE로, 그 밖에는 NFC 태그 읽기로 처리한다."><defs>
+  <marker id="ac-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" style="fill:currentColor"/></marker>
+  <marker id="ac-b" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" style="fill:var(--blue)"/></marker>
+</defs>
+  
+  <rect x="15" y="82" width="150" height="56" rx="10" style="fill:var(--bg);stroke:var(--line);stroke-width:1.5"/>
+  <text x="90" y="107" text-anchor="middle" font-size="13" font-weight="700" style="fill:currentColor">앱카드 실행</text>
+  <text x="90" y="125" text-anchor="middle" font-size="11.5" style="fill:var(--ink-3)">단지 지원 모드 확인</text>
+  
+  <rect x="200" y="82" width="185" height="56" rx="10" style="fill:var(--bg);stroke:var(--line);stroke-width:1.5"/>
+  <text x="292.5" y="115" text-anchor="middle" font-size="13" font-weight="700" style="fill:currentColor">HCE 단말 + 리더 단지?</text>
+  
+  
+  <rect x="440" y="14" width="205" height="56" rx="10" style="fill:var(--blue-soft);stroke:var(--blue);stroke-width:1.5"/>
+  <text x="542.5" y="39" text-anchor="middle" font-size="13" font-weight="700" style="fill:currentColor">HCE 앱카드</text>
+  <text x="542.5" y="57" text-anchor="middle" font-size="11.5" style="fill:var(--ink-3)">AID 우선순위 규칙</text>
+  
+  <rect x="440" y="150" width="205" height="56" rx="10" style="fill:var(--bg);stroke:var(--line);stroke-width:1.5"/>
+  <text x="542.5" y="175" text-anchor="middle" font-size="13" font-weight="700" style="fill:currentColor">NFC 태그 읽기</text>
+  <text x="542.5" y="193" text-anchor="middle" font-size="11.5" style="fill:var(--ink-3)">HCE 미지원 단말 · 리더 없는 단지</text>
+  <line x1="165" y1="110" x2="197" y2="110" style="stroke:currentColor;stroke-width:1.5;fill:none" marker-end="url(#ac-a)"/>
+  <line x1="385" y1="98" x2="437" y2="48" style="stroke:var(--blue);stroke-width:1.75;fill:none" marker-end="url(#ac-b)"/>
+  <line x1="385" y1="122" x2="437" y2="172" style="stroke:currentColor;stroke-width:1.5;fill:none" marker-end="url(#ac-a)"/>
+  <text x="400" y="66" text-anchor="end" font-size="12" font-weight="700" style="fill:var(--blue)">예</text>
+  <text x="400" y="166" text-anchor="end" font-size="12" font-weight="700" style="fill:currentColor">아니오</text>
+</svg></figure>
+<p class="role"><b>맡은 범위</b> AID 우선순위 규칙, 단말 이원화, 읽기 모드 구현과 배포를 맡았습니다.</p>
+</article>
+<article class="case" id="hce">
+<p class="cmeta"><span class="no">05</span>HCE · SDK · 2020 ~ 2022</p>
+<h2>HCE 교통카드 SDK 초도 버전 안정화</h2>
+<dl><dt>상황</dt><dd>SE 없이 소프트웨어만으로 교통카드를 구현하는 SDK였고 방식은 팀이 정했습니다. 초도 버전에서는 NFC 통신 값이 튀어 결제 금액이 잘못 계산되는 오류가 있었고, 서울·대구·부산 등 지역마다 단말기 RF 특성이 달랐습니다.</dd><dt>판단</dt><dd>지역별 실제 단말로 RF 튜닝과 현장 테스트를 반복하며 금액 오류의 원인을 찾아 고쳤습니다. AsyncTask 기반 비동기 처리는 Coroutine으로 옮겨 안정성을 확보했습니다.</dd></dl>
+<div class="nums n3"><div><b>99.9%</b><span>인식률</span></div><div><b>200ms 이하</b><span>결제 응답(태그 인식부터 응답 완료까지, 앱 로그)</span></div><div><b>7곳 이상</b><span>금융·교통·공공 상용 배포</span></div></div>
+
+<p class="role"><b>맡은 범위</b> Android SDK 초도 버전 안정화, 지역별 현장 테스트, iOS SDK 포팅을 맡았습니다.</p>
+</article></section>
+<div class="keep"><h1>그 밖의 과제</h1><table class="rows"><thead><tr><th>과제</th><th>한 일</th><th>결과</th></tr></thead><tbody>
+<tr><td>인증 저장소 전환<span>HT Beyond</span></td><td>자동 로그아웃·기기 계정 100개 제한 장애 뒤 시스템 계정 의존 제거</td><td>인입 10일 만에 전환 개발</td></tr>
+<tr><td>화이트라벨·디자인 토큰<span>HT Beyond</span></td><td>Product Flavor와 설정 분리, Figma Variables 원본 3계층 토큰, 앱 추가 스크립트·체크리스트</td><td>6 → 12종(20개월), 신규 앱 2~4주 → 1주 이내, 레거시 테마 6,840줄 삭제</td></tr>
+<tr><td>앱 시작 경로 정비<span>HT Beyond</span></td><td>androidx.startup 초기화 순서, 토큰 갱신 single-flight, 진입 경로 6가지를 라우터 하나로</td><td>반복 증상 3건 단계적 해소</td></tr>
+<tr><td>WebBridge 공통 규격<span>HT Beyond</span></td><td>iOS 제약을 감안한 dispatchEvent 규격, 핸들러 28종 분리와 계약 테스트</td><td>웹·앱 릴리스 사이클 분리</td></tr>
+<tr><td>정지 프레임 원인 분석<span>HT Beyond</span></td><td>대조 실험과 트레이스로 WebView 렌더링 구간 특정, Web팀 이관</td><td>정지 프레임 비율 절반 수준(진행 중)</td></tr>
+<tr><td>AI 작업 하네스<span>HT Beyond</span></td><td>문서 라우터, 승인 후 실행, push 전 셀프 리뷰 게이트, Android 위키</td><td>리뷰 없는 push 차단, iOS·Web·Backend 팀과 공유</td></tr>
+<tr><td>관리자앱 개발<span>HT Beyond</span></td><td>관리자 웹을 담는 하이브리드 구조, CameraX로 번호판 인식 코어 모듈 연동</td><td>첫 커밋 1개월 만에 릴리스 검증, 15개 단지 도입</td></tr>
+<tr><td>보안 인증<span>HT Beyond</span></td><td>시큐어코딩 조치, 루팅 탐지, 저장 데이터 암호화, 시험 증적용 감사 로거</td><td>KISA 정보보호인증 획득, KAIT 점검 2회</td></tr>
+<tr><td>유료 구독 부정 이용 차단<span>HT Beyond</span></td><td>로컬 로그 탐지와 서버 검증의 이중 구조, 구독 만료 시 서비스·위젯 차단</td><td>미결제 이용 세대 비율 95% 이상 감소(2025.04 → 12)</td></tr>
+<tr><td>BLE 테스트 앱<span>HT Beyond</span></td><td>출입 모듈의 감도·출력 설정과 통신 로그를 확인하는 도구를 자발적으로 제작</td><td>사내에서 설정 변경·통신 확인 가능</td></tr>
+<tr><td>전기차 충전 멤버십 SDK<span>TelCuon</span></td><td>충전 사업자별 인증을 단일 프로토콜로 통일, NFC Reader 모드로 여러 태그 동시 식별</td><td>완성차 브랜드 충전 앱 3종 적용</td></tr>
+<tr><td>KloneSales 출시<span>Klleon</span></td><td>Flutter로 두 플랫폼 동시 대응, 팀원 퇴사 후 남은 개발과 운영 단독</td><td>1.5개월 만에 Android·iOS 상용 배포</td></tr>
+</tbody></table></div></body></html>
