@@ -115,7 +115,7 @@ figure svg { display: block; width: 360pt; margin: 0 auto; height: auto; color: 
   <line x1="572" y1="90" x2="572" y2="143" style="stroke:currentColor;stroke-width:1.5;fill:none" marker-end="url(#wl-a)"/>
   <text x="15" y="250" font-size="12.5" style="fill:currentColor">신규 건설사는 추가 스크립트가 설정·토큰·Flavor를 만들고, 남는 항목은 체크리스트로 확인</text>
 </svg></figure>
-<p class="role"><b>맡은 범위</b> Flavor 구조와 설정 분리, 토큰 계층과 Compose 테마 전환, 앱 추가 스크립트, Fastlane·Jenkins 배포를 직접 했습니다. Figma Variables는 디자이너가 관리합니다.</p>
+<p class="role"><b>맡은 범위</b> Flavor 구조와 설정 분리, 토큰 계층과 Compose 테마 전환, 앱 추가 스크립트, Fastlane·Jenkins 배포를 직접 했고, Jenkins·Mac Studio 전환으로 빌드 시간을 20~30분에서 약 5분으로 줄였습니다. Figma Variables는 디자이너가 관리합니다.</p>
 </article>
 <article class="case" id="webbridge">
 <p class="cmeta"><span class="no">02</span>WebView · Contract Test · 2024 ~ 2026</p>
@@ -292,7 +292,7 @@ figure svg { display: block; width: 360pt; margin: 0 auto; height: auto; color: 
 <p class="role"><b>맡은 범위</b> 레포 하네스, 개인 파이프라인, AI PR 리뷰는 직접 만들었습니다. 팀 CI 리뷰봇과 /task·/commit·/pr 스킬은 팀원이 만든 것을 씁니다. <a href="https://velog.io/@day_park_94/AI끼리-리뷰를-시켰더니-기획까지-고쳐-놓았습니다">블로그: AI끼리 리뷰를 시켰더니 기획까지 고쳐 놓았습니다</a></p>
 </article></section>
 <div class="keep"><h1>그 밖의 과제</h1><table class="rows"><thead><tr><th>과제</th><th>한 일</th><th>결과</th></tr></thead><tbody>
-<tr><td>크래시율 개선<span>HT Beyond</span></td><td>Foreground Service 초기화 오류, 네트워크 끊김 때 처리되지 않던 화면 예외를 크래시 지표로 찾아 수정</td><td>단독 담당 후 크래시율 3~5% → 0.1% 미만(2025년 초부터, Play Console)</td></tr>
+<tr><td>크래시율 개선<span>HT Beyond</span></td><td>재현이 어려운 크래시 원인을 지표로 추적, Foreground Service 초기화 오류와 네트워크 끊김 때 처리되지 않던 화면 예외 수정</td><td>단독 담당 후 크래시율 3~5% → 0.1% 미만(2025년 초부터, Play Console)</td></tr>
 <tr><td>관리자앱 개발<span>HT Beyond</span></td><td>일정 제약으로 관리자 웹을 담는 하이브리드 구조 선택, CameraX로 번호판 인식 코어 모듈 연동, 테스트 63개</td><td>첫 커밋 1개월 만에 릴리스 검증, 15개 단지 도입</td></tr>
 <tr><td>유료 구독 부정 이용 차단<span>HT Beyond</span></td><td>로컬 로그 탐지와 서버 검증의 이중 구조, 구독 만료 시 서비스·위젯 차단</td><td>미결제 이용 세대 비율 95% 이상 감소(2025.04 → 12)</td></tr>
 <tr><td>정지 프레임 원인 분석<span>HT Beyond</span></td><td>대조 실험과 트레이스로 WebView 렌더링 구간 특정, Web팀 이관</td><td>정지 프레임 비율 절반 수준(진행 중)</td></tr>
