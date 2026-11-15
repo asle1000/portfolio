@@ -59,7 +59,7 @@ figure svg { display: block; width: 360pt; margin: 0 auto; height: auto; color: 
 </style></head><body><header class="top"><p class="name">박경현<span class="role">  Android Developer · Android Portfolio</span></p>
 <p class="contact">asle1000@gmail.com<span class="sep">   |   </span><a href="https://github.com/asle1000">github.com/asle1000</a><span class="sep">   |   </span><a href="https://velog.io/@day_park_94">velog.io/@day_park_94</a></p>
 <p class="thesis">앱 밖에서 생기는 문제까지 원인을 찾아 해결합니다.</p><p class="subt">결제 SDK와 스마트홈 앱에서 BLE·NFC·HCE로 실물 기기와 통신하는 기능을 만들어 왔습니다. OS 업데이트, 제조사 변경, 기기 연동처럼 앱 코드 밖에서 생긴 문제는 로그와 AOSP 코드로 좁히고 앱에서 먼저 막습니다. 지금은 MAU 20만 이상 스마트홈 앱의 Android를 혼자 맡고 있습니다.</p></header>
-<div class="stats"><div><b>다음 날</b><span class="st">Galaxy S26 장애 상용 핫픽스</span><span class="sd">원인은 AOSP 커밋으로 확인</span></div><div><b>18.9% → 1.3%</b><span class="st">BLE 출입 배터리 소모</span><span class="sd">오류율 0.3% 이하 유지</span></div><div><b>99.9%</b><span class="st">HCE 교통카드 SDK 인식률</span><span class="sd">금융·교통·공공 7곳 이상 상용 배포</span></div><div><b>99.95%</b><span class="st">Crash-free 사용자</span><span class="sd">MAU 20만 이상 앱, Crashlytics</span></div></div>
+<div class="stats"><div><b>다음 날</b><span class="st">Galaxy S26 장애 상용 핫픽스</span><span class="sd">원인은 AOSP 커밋으로 확인</span></div><div><b>18.9% → 1.3%</b><span class="st">BLE 출입 배터리 소모</span><span class="sd">오류율 0.3% 이하 유지</span></div><div><b>99.9%</b><span class="st">HCE 교통카드 SDK 인식률</span><span class="sd">금융·교통·공공 7곳 이상 상용 배포</span></div><div><b>3~5% → 0.1%</b><span class="st">크래시율, 단독 담당 후</span><span class="sd">2025년 초부터(Play Console), Crash-free 99.95%</span></div></div>
 <div class="keep"><h1>대표 사례</h1><table class="index"><thead><tr><th></th><th>과제</th><th>핵심 판단</th><th>결과</th></tr></thead><tbody>
 <tr><td class="no">01</td><td>Galaxy S26 엘리베이터 호출 실패, 다음 날 핫픽스</td><td>OS 수정을 기다리지 않고 앱에서 식별 순서를 바꿈</td><td>인입 당일 수정, 다음 날 상용 배포</td></tr>
 <tr><td class="no">02</td><td>Android 16 WebView 콜드 스타트 크래시, 착수 5일 만에 방어</td><td>제조사 수정을 기다리지 않고 API 36 한정 방어 코드</td><td>크래시율 0.1% 미만, 착수 5일 만에 적용</td></tr>
@@ -67,7 +67,7 @@ figure svg { display: block; width: 360pt; margin: 0 auto; height: auto; color: 
 <tr><td class="no">04</td><td>HCE 미지원 단말과 리더 없는 단지까지 앱카드 확장</td><td>단말과 단지에 따라 HCE와 NFC 태그 읽기로 이원화</td><td>전 단말·전 단지 제공, 요청부터 알파까지 약 3주</td></tr>
 <tr><td class="no">05</td><td>HCE 교통카드 SDK 초도 버전 안정화</td><td>지역별 실단말 RF 튜닝, Coroutine 전환</td><td>인식률 99.9%, 결제 200ms 이하, 7곳 이상 상용 배포</td></tr>
 </tbody></table></div>
-<div class="keep"><h1>프로젝트</h1><table class="proj"><tr><th>바이비 2.0<span>HT Beyond · 2023.08 ~ 재직 중</span></th><td>아파트 입주민 스마트홈 앱. 건설사 앱 12종을 코드베이스 하나로 운영, Android MAU 20만 이상(GA4). 2024.12부터 Android 단독, 협업 iOS 1·Web 4·Backend 8</td></tr><tr><th>바이비 관리자앱<span>HT Beyond · 2026.07 ~ 재직 중</span></th><td>현장 주차단속 앱. Android 단독 개발, 번호판 인식 코어는 팀원이 개발한 모듈을 연동</td></tr><tr><th>KloneSales<span>Klleon · 2022.08 ~ 2023.08</span></th><td>AI 디지털 휴먼 영상 앱. 2인 모바일 팀에서 Flutter로 Android·iOS 개발</td></tr><tr><th>HCE 교통카드 SDK<span>TelCuon · 2020.05 ~ 2022.08</span></th><td>SE 없이 HCE로 동작하는 교통카드 SDK. Android SDK 개발과 iOS 포팅</td></tr></table></div>
+<div class="keep"><h1>프로젝트</h1><table class="proj"><tr><th>바이비 2.0<span>HT Beyond · 2023.08 ~ 재직 중</span></th><td>아파트 입주민 스마트홈 앱. 건설사 앱 12종을 코드베이스 하나로 운영, Android MAU 20만 이상(GA4). 2024.12부터 Android 단독(PR은 iOS 개발자와 상호 리뷰), 협업 iOS 1·Web 4·Backend 8</td></tr><tr><th>바이비 관리자앱<span>HT Beyond · 2026.07 ~ 재직 중</span></th><td>현장 주차단속 앱. Android 단독 개발, 번호판 인식 코어는 팀원이 개발한 모듈을 연동</td></tr><tr><th>KloneSales<span>Klleon · 2022.08 ~ 2023.08</span></th><td>AI 디지털 휴먼 영상 앱. 2인 모바일 팀에서 Flutter로 Android·iOS 개발, Tech Leader로 기술 스택 선정·코드 리뷰·채용(1명)</td></tr><tr><th>HCE 교통카드 SDK<span>TelCuon · 2020.05 ~ 2022.08</span></th><td>SE 없이 HCE로 동작하는 교통카드 SDK. Android SDK 개발과 iOS 포팅</td></tr></table></div>
 <div class="keep"><h1>그 밖에</h1><table class="proj etc">
 <tr><th>오늘은 연차</th><td>연차 관리 앱. Compose, Clean Architecture, 멀티모듈, MVI, Koin. Google Play 배포 <a href="https://play.google.com/store/apps/details?id=com.dayoff.manager">play.google.com/store/apps/details?id=com.dayoff.manager</a></td></tr><tr><th>NotiToss</th><td>서버 없이 Wi-Fi P2P로 기기 간 알림을 실시간 미러링하는 앱 <a href="https://github.com/asle1000/NotiToss">github.com/asle1000/NotiToss</a></td></tr>
 <tr><th>학력</th><td>용인대학교 컴퓨터과학과 (2014.03 ~ 2020.07)</td></tr><tr><th>발표와 글</th><td>Jetpack Compose·Flutter 사내 테크톡, velog 기술 블로그(Android 16 WebView 크래시 분석, AI 리뷰 사례)</td></tr></table></div>
@@ -235,14 +235,15 @@ figure svg { display: block; width: 360pt; margin: 0 auto; height: auto; color: 
 <p class="role"><b>맡은 범위</b> Android SDK 초도 버전 안정화, 지역별 현장 테스트, iOS SDK 포팅을 맡았습니다.</p>
 </article></section>
 <div class="keep"><h1>그 밖의 과제</h1><table class="rows"><thead><tr><th>과제</th><th>한 일</th><th>결과</th></tr></thead><tbody>
+<tr><td>크래시율 개선<span>HT Beyond</span></td><td>Foreground Service 초기화 오류, 네트워크 끊김 때 처리되지 않던 화면 예외를 크래시 지표로 찾아 수정</td><td>단독 담당 후 크래시율 3~5% → 0.1% 미만(2025년 초부터, Play Console)</td></tr>
 <tr><td>인증 저장소 전환<span>HT Beyond</span></td><td>자동 로그아웃·기기 계정 100개 제한 장애 뒤 시스템 계정 의존 제거</td><td>인입 10일 만에 전환 개발</td></tr>
 <tr><td>화이트라벨·디자인 토큰<span>HT Beyond</span></td><td>Product Flavor와 설정 분리, Figma Variables 원본 3계층 토큰, 앱 추가 스크립트·체크리스트</td><td>6 → 12종(20개월), 신규 앱 2~4주 → 1주 이내, 레거시 테마 6,840줄 삭제</td></tr>
 <tr><td>앱 시작 경로 정비<span>HT Beyond</span></td><td>androidx.startup 초기화 순서, 토큰 갱신 single-flight, 진입 경로 6가지를 라우터 하나로</td><td>반복 증상 3건 단계적 해소</td></tr>
 <tr><td>WebBridge 공통 규격<span>HT Beyond</span></td><td>iOS 제약을 감안한 dispatchEvent 규격, 핸들러 28종 분리와 계약 테스트</td><td>웹·앱 릴리스 사이클 분리</td></tr>
 <tr><td>정지 프레임 원인 분석<span>HT Beyond</span></td><td>대조 실험과 트레이스로 WebView 렌더링 구간 특정, Web팀 이관</td><td>정지 프레임 비율 절반 수준(진행 중)</td></tr>
-<tr><td>AI 작업 하네스<span>HT Beyond</span></td><td>문서 라우터, 승인 후 실행, push 전 셀프 리뷰 게이트, Android 위키</td><td>리뷰 없는 push 차단, iOS·Web·Backend 팀과 공유</td></tr>
-<tr><td>관리자앱 개발<span>HT Beyond</span></td><td>관리자 웹을 담는 하이브리드 구조, CameraX로 번호판 인식 코어 모듈 연동</td><td>첫 커밋 1개월 만에 릴리스 검증, 15개 단지 도입</td></tr>
-<tr><td>보안 인증<span>HT Beyond</span></td><td>시큐어코딩 조치, 루팅 탐지, 저장 데이터 암호화, 시험 증적용 감사 로거</td><td>KISA 정보보호인증 획득, KAIT 점검 2회</td></tr>
+<tr><td>AI 작업 하네스<span>HT Beyond</span></td><td>문서 라우터, 승인 후 실행, push 전 셀프 리뷰 게이트, AI PR 리뷰, Android 위키</td><td>AI 리뷰·QA 지적 감소, 다른 팀도 사전 분석 없이 Android 작업</td></tr>
+<tr><td>관리자앱 개발<span>HT Beyond</span></td><td>일정 제약으로 관리자 웹을 담는 하이브리드 구조 선택, CameraX로 번호판 인식 코어 모듈 연동, 테스트 63개</td><td>첫 커밋 1개월 만에 릴리스 검증, 15개 단지 도입</td></tr>
+<tr><td>보안 인증<span>HT Beyond</span></td><td>시큐어코딩 조치, 루팅 탐지, 저장 데이터 암호화, 시험 증적용 감사 로거</td><td>KISA 정보보호인증·KAIT 점검 2회의 Android 요건 대응</td></tr>
 <tr><td>유료 구독 부정 이용 차단<span>HT Beyond</span></td><td>로컬 로그 탐지와 서버 검증의 이중 구조, 구독 만료 시 서비스·위젯 차단</td><td>미결제 이용 세대 비율 95% 이상 감소(2025.04 → 12)</td></tr>
 <tr><td>BLE 테스트 앱<span>HT Beyond</span></td><td>출입 모듈의 감도·출력 설정과 통신 로그를 확인하는 도구를 자발적으로 제작</td><td>사내에서 설정 변경·통신 확인 가능</td></tr>
 <tr><td>전기차 충전 멤버십 SDK<span>TelCuon</span></td><td>충전 사업자별 인증을 단일 프로토콜로 통일, NFC Reader 모드로 여러 태그 동시 식별</td><td>완성차 브랜드 충전 앱 3종 적용</td></tr>

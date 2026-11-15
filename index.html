@@ -59,15 +59,15 @@ figure svg { display: block; width: 360pt; margin: 0 auto; height: auto; color: 
 </style></head><body><header class="top"><p class="name">박경현<span class="role">  Android Developer · Android Portfolio</span></p>
 <p class="contact">asle1000@gmail.com<span class="sep">   |   </span><a href="https://github.com/asle1000">github.com/asle1000</a><span class="sep">   |   </span><a href="https://velog.io/@day_park_94">velog.io/@day_park_94</a></p>
 <p class="thesis">건설사 앱 12종을 코드베이스 하나로 운영하는 화이트라벨 구조를 설계했습니다.</p><p class="subt">2024년 말부터 MAU 20만 이상 스마트홈 앱의 Android를 혼자 맡아 출시, 품질, 보안 인증 대응까지 책임지고 있습니다. Android 밖에서 생긴 문제도 직접 확인합니다. Web팀과는 웹과 앱이 따로 릴리스하도록 연동 규격을 맞췄고, OS·제조사 쪽 장애는 AOSP 코드까지 따라가 원인을 찾았습니다. 대표 사례 5건은 무엇을 두고 무엇을 골랐는지를 중심으로 적었습니다.</p></header>
-<div class="stats"><div><b>6 → 12종</b><span class="st">건설사 앱, 코드베이스 하나</span><span class="sd">신규 앱 추가 2~4주 → 1주 이내</span></div><div><b>99.95%</b><span class="st">Crash-free 사용자</span><span class="sd">ANR 0.01~0.02%, MAU 20만 이상 앱</span></div><div><b>95% 이상 감소</b><span class="st">유료 구독 미결제 이용 세대 비율</span><span class="sd">부정 이용 차단, 2025.04 → 12</span></div><div><b>18.9% → 1.3%</b><span class="st">BLE 출입 배터리 소모</span><span class="sd">하루 17~20만 건 처리</span></div></div>
+<div class="stats"><div><b>6 → 12종</b><span class="st">건설사 앱, 코드베이스 하나</span><span class="sd">신규 앱 추가 2~4주 → 1주 이내</span></div><div><b>3~5% → 0.1%</b><span class="st">크래시율, 단독 담당 후</span><span class="sd">2025년 초부터(Play Console), Crash-free 99.95%</span></div><div><b>95% 이상 감소</b><span class="st">유료 구독 미결제 이용 세대 비율</span><span class="sd">부정 이용 차단, 2025.04 → 12</span></div><div><b>18.9% → 1.3%</b><span class="st">BLE 출입 배터리 소모</span><span class="sd">하루 17~20만 건 처리</span></div></div>
 <div class="keep"><h1>대표 사례</h1><table class="index"><thead><tr><th></th><th>과제</th><th>핵심 판단</th><th>결과</th></tr></thead><tbody>
 <tr><td class="no">01</td><td>건설사 앱 12종을 코드베이스 하나로</td><td>앱별 코드베이스 대신 Flavor와 설정값, 3계층 토큰</td><td>6 → 12종(20개월), 신규 앱 2~4주 → 1주 이내</td></tr>
 <tr><td class="no">02</td><td>WebBridge 공통 규격으로 웹 배포를 앱 배포에서 분리</td><td>iOS 제약을 감안한 공통 규격을 먼저 제안</td><td>웹·앱 릴리스 사이클 분리, 핸들러 28종 계약 테스트</td></tr>
 <tr><td class="no">03</td><td>앱 시작 경로의 반복 증상 3건을 순서대로 정비</td><td>공통 원인 하나로 묶지 않고 시작 경로를 앞에서부터 정비</td><td>반복 증상 3건 단계적 해소</td></tr>
 <tr><td class="no">04</td><td>BLE 출입 배터리 소모 18.9% → 1.3%</td><td>상시 스캔 대신 단지 반경 Geofence 조건부 스캔</td><td>배터리 18.9% → 1.3%, 오류율 0.3% 이하 유지</td></tr>
-<tr><td class="no">05</td><td>AI 작업 하네스, 리뷰를 거치지 않으면 push되지 않게</td><td>AI에게 맡기는 범위보다 범위를 정하고 확인하는 절차를 먼저</td><td>리뷰 없는 push 차단, 작업 이력은 Android 위키로</td></tr>
+<tr><td class="no">05</td><td>AI 작업 하네스, 리뷰를 거치지 않으면 push되지 않게</td><td>AI에게 맡기는 범위보다 범위를 정하고 확인하는 절차를 먼저</td><td>리뷰 없는 push 차단, 도입 뒤 AI 리뷰·QA 지적 감소</td></tr>
 </tbody></table></div>
-<div class="keep"><h1>프로젝트</h1><table class="proj"><tr><th>바이비 2.0<span>HT Beyond · 2023.08 ~ 재직 중</span></th><td>아파트 입주민 스마트홈 앱. 건설사 앱 12종을 코드베이스 하나로 운영, Android MAU 20만 이상(GA4). 2024.12부터 Android 단독, 협업 iOS 1·Web 4·Backend 8</td></tr><tr><th>바이비 관리자앱<span>HT Beyond · 2026.07 ~ 재직 중</span></th><td>현장 주차단속 앱. Android 단독 개발, 번호판 인식 코어는 팀원이 개발한 모듈을 연동</td></tr><tr><th>KloneSales<span>Klleon · 2022.08 ~ 2023.08</span></th><td>AI 디지털 휴먼 영상 앱. 2인 모바일 팀에서 Flutter로 Android·iOS 개발</td></tr><tr><th>HCE 교통카드 SDK<span>TelCuon · 2020.05 ~ 2022.08</span></th><td>SE 없이 HCE로 동작하는 교통카드 SDK. Android SDK 개발과 iOS 포팅</td></tr></table></div>
+<div class="keep"><h1>프로젝트</h1><table class="proj"><tr><th>바이비 2.0<span>HT Beyond · 2023.08 ~ 재직 중</span></th><td>아파트 입주민 스마트홈 앱. 건설사 앱 12종을 코드베이스 하나로 운영, Android MAU 20만 이상(GA4). 2024.12부터 Android 단독(PR은 iOS 개발자와 상호 리뷰), 협업 iOS 1·Web 4·Backend 8</td></tr><tr><th>바이비 관리자앱<span>HT Beyond · 2026.07 ~ 재직 중</span></th><td>현장 주차단속 앱. Android 단독 개발, 번호판 인식 코어는 팀원이 개발한 모듈을 연동</td></tr><tr><th>KloneSales<span>Klleon · 2022.08 ~ 2023.08</span></th><td>AI 디지털 휴먼 영상 앱. 2인 모바일 팀에서 Flutter로 Android·iOS 개발, Tech Leader로 기술 스택 선정·코드 리뷰·채용(1명)</td></tr><tr><th>HCE 교통카드 SDK<span>TelCuon · 2020.05 ~ 2022.08</span></th><td>SE 없이 HCE로 동작하는 교통카드 SDK. Android SDK 개발과 iOS 포팅</td></tr></table></div>
 <div class="keep"><h1>그 밖에</h1><table class="proj etc">
 <tr><th>오늘은 연차</th><td>연차 관리 앱. Compose, Clean Architecture, 멀티모듈, MVI, Koin. Google Play 배포 <a href="https://play.google.com/store/apps/details?id=com.dayoff.manager">play.google.com/store/apps/details?id=com.dayoff.manager</a></td></tr><tr><th>NotiToss</th><td>서버 없이 Wi-Fi P2P로 기기 간 알림을 실시간 미러링하는 앱 <a href="https://github.com/asle1000/NotiToss">github.com/asle1000/NotiToss</a></td></tr>
 <tr><th>학력</th><td>용인대학교 컴퓨터과학과 (2014.03 ~ 2020.07)</td></tr><tr><th>발표와 글</th><td>Jetpack Compose·Flutter 사내 테크톡, velog 기술 블로그(Android 16 WebView 크래시 분석, AI 리뷰 사례)</td></tr></table></div>
@@ -237,7 +237,7 @@ figure svg { display: block; width: 360pt; margin: 0 auto; height: auto; color: 
 <article class="case" id="harness">
 <p class="cmeta"><span class="no">05</span>AI · Workflow · 2026 ~ 재직 중</p>
 <h2>AI 작업 하네스, 리뷰를 거치지 않으면 push되지 않게</h2>
-<dl><dt>상황</dt><dd>팀원 모두 AI로 작업하면서 PR이 늘었습니다. AI 리뷰와 AI 수정을 주고받게 했더니 작업과 관계없는 파일과 기획에서 정한 로직까지 바뀐 PR이 나왔고, 원인은 수정 범위를 정해 주지 않은 것이었습니다.</dd><dt>판단</dt><dd>AI에게 맡기는 범위를 늘리기 전에 범위를 정하고 확인하는 절차를 레포에 넣었습니다. 루트 CLAUDE.md는 라우터로 줄이고 작업 영역별로 읽을 문서와 함께 고칠 문서를 인덱스로 연결했습니다. 요청을 받으면 영향 범위를 보고해 승인을 받은 뒤에만 고치고, 셀프 리뷰는 push 앞에 훅으로 걸었습니다. 작업 이력은 프로젝트 안 Android 위키에 쌓습니다.</dd></dl>
+<dl><dt>상황</dt><dd>팀원 모두 AI로 작업하면서 PR이 늘었습니다. AI 리뷰와 AI 수정을 주고받게 했더니 작업과 관계없는 파일과 기획에서 정한 로직까지 바뀐 PR이 나왔고, 원인은 수정 범위를 정해 주지 않은 것이었습니다.</dd><dt>판단</dt><dd>AI에게 맡기는 범위를 늘리기 전에 범위를 정하고 확인하는 절차를 레포에 넣었습니다. 루트 CLAUDE.md는 라우터로 줄이고 작업 영역별로 읽을 문서와 함께 고칠 문서를 인덱스로 연결했습니다. 요청을 받으면 영향 범위를 보고해 승인을 받은 뒤에만 고치고, 셀프 리뷰는 push 앞에 훅으로 걸었습니다. PR 단계에는 AI PR 리뷰를 따로 만들어 붙였고, 사람 리뷰는 iOS 개발자와 서로 봅니다. 작업 이력은 프로젝트 안 Android 위키에 쌓아 다른 팀도 사전 분석 없이 Android 프로젝트를 작업합니다.</dd></dl>
 
 <figure><svg viewBox="0 0 660 214" role="img" aria-label="요청을 받으면 영향 범위를 보고하고 승인을 받은 뒤 구현하며, push 앞의 셀프 리뷰 훅을 통과해야 push되고, PR에서는 CI와 봇 리뷰를 거쳐 반영 여부를 직접 판단한다."><defs>
   <marker id="hn-a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" style="fill:currentColor"/></marker>
@@ -289,17 +289,18 @@ figure svg { display: block; width: 360pt; margin: 0 auto; height: auto; color: 
   <line x1="395" y1="165" x2="373" y2="165" style="stroke:currentColor;stroke-width:1.5;fill:none" marker-end="url(#hn-a)"/>
   <line x1="215" y1="165" x2="193" y2="165" style="stroke:currentColor;stroke-width:1.5;fill:none" marker-end="url(#hn-a)"/>
 </svg></figure>
-<p class="role"><b>맡은 범위</b> 레포 하네스와 개인 파이프라인은 직접 만들었습니다. CI 봇 리뷰와 /task·/commit·/pr 스킬은 팀원이 만든 것을 씁니다. <a href="https://velog.io/@day_park_94/AI끼리-리뷰를-시켰더니-기획까지-고쳐-놓았습니다">블로그: AI끼리 리뷰를 시켰더니 기획까지 고쳐 놓았습니다</a></p>
+<p class="role"><b>맡은 범위</b> 레포 하네스, 개인 파이프라인, AI PR 리뷰는 직접 만들었습니다. 팀 CI 리뷰봇과 /task·/commit·/pr 스킬은 팀원이 만든 것을 씁니다. <a href="https://velog.io/@day_park_94/AI끼리-리뷰를-시켰더니-기획까지-고쳐-놓았습니다">블로그: AI끼리 리뷰를 시켰더니 기획까지 고쳐 놓았습니다</a></p>
 </article></section>
 <div class="keep"><h1>그 밖의 과제</h1><table class="rows"><thead><tr><th>과제</th><th>한 일</th><th>결과</th></tr></thead><tbody>
-<tr><td>관리자앱 개발<span>HT Beyond</span></td><td>관리자 웹을 담는 하이브리드 구조, CameraX로 번호판 인식 코어 모듈 연동</td><td>첫 커밋 1개월 만에 릴리스 검증, 15개 단지 도입</td></tr>
+<tr><td>크래시율 개선<span>HT Beyond</span></td><td>Foreground Service 초기화 오류, 네트워크 끊김 때 처리되지 않던 화면 예외를 크래시 지표로 찾아 수정</td><td>단독 담당 후 크래시율 3~5% → 0.1% 미만(2025년 초부터, Play Console)</td></tr>
+<tr><td>관리자앱 개발<span>HT Beyond</span></td><td>일정 제약으로 관리자 웹을 담는 하이브리드 구조 선택, CameraX로 번호판 인식 코어 모듈 연동, 테스트 63개</td><td>첫 커밋 1개월 만에 릴리스 검증, 15개 단지 도입</td></tr>
 <tr><td>유료 구독 부정 이용 차단<span>HT Beyond</span></td><td>로컬 로그 탐지와 서버 검증의 이중 구조, 구독 만료 시 서비스·위젯 차단</td><td>미결제 이용 세대 비율 95% 이상 감소(2025.04 → 12)</td></tr>
 <tr><td>정지 프레임 원인 분석<span>HT Beyond</span></td><td>대조 실험과 트레이스로 WebView 렌더링 구간 특정, Web팀 이관</td><td>정지 프레임 비율 절반 수준(진행 중)</td></tr>
 <tr><td>Galaxy S26 엘리베이터 호출<span>HT Beyond</span></td><td>스캔 시점 광고명 우선 식별로 핫픽스, 원인은 AOSP 커밋으로 확인</td><td>인입 당일 수정, 다음 날 배포</td></tr>
 <tr><td>Android 16 WebView 크래시<span>HT Beyond</span></td><td>API 36 한정 방어 코드, Google·제조사 리포트</td><td>착수 5일 만에 적용, 크래시율 0.1% 미만</td></tr>
 <tr><td>인증 저장소 전환<span>HT Beyond</span></td><td>자동 로그아웃·기기 계정 100개 제한 장애 뒤 시스템 계정 의존 제거</td><td>인입 10일 만에 전환 개발</td></tr>
 <tr><td>HCE 앱카드 확장<span>HT Beyond</span></td><td>AID 우선순위 규칙, HCE 미지원 단말과 리더 없는 단지는 NFC 태그 읽기</td><td>전 단말·전 단지, 요청부터 알파까지 약 3주</td></tr>
-<tr><td>보안 인증<span>HT Beyond</span></td><td>시큐어코딩 조치, 루팅 탐지, 저장 데이터 암호화, 시험 증적용 감사 로거</td><td>KISA 정보보호인증 획득, KAIT 점검 2회</td></tr>
+<tr><td>보안 인증<span>HT Beyond</span></td><td>시큐어코딩 조치, 루팅 탐지, 저장 데이터 암호화, 시험 증적용 감사 로거</td><td>KISA 정보보호인증·KAIT 점검 2회의 Android 요건 대응</td></tr>
 <tr><td>KloneSales 출시<span>Klleon</span></td><td>Flutter로 두 플랫폼 동시 대응, 팀원 퇴사 후 남은 개발과 운영 단독</td><td>1.5개월 만에 Android·iOS 상용 배포</td></tr>
 <tr><td>HCE 교통카드 SDK<span>TelCuon</span></td><td>초도 버전 결제 금액 오류 수정, 지역별 실단말 RF 튜닝, Coroutine 전환</td><td>인식률 99.9%, 결제 200ms 이하, 7곳 이상 상용 배포</td></tr>
 </tbody></table></div></body></html>
